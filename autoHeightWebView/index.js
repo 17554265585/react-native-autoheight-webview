@@ -72,6 +72,7 @@ const AutoHeightWebView = React.memo(
 
     return (
       <WebView
+        useWebKit={false}
         {...props}
         ref={webView}
         onMessage={handleMessage}
