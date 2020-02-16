@@ -67,7 +67,7 @@ const AutoHeightWebView = React.memo(
       [width, height, onSizeUpdated]
     );
     return (
-      <View style={[props.style, { height: height || 50 }]}>
+      <View style={[props.style, { height: height || 20 }]}>
         <WebView
           {...props}
           style={{}}
