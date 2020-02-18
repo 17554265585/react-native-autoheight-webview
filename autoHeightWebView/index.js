@@ -70,7 +70,7 @@ const AutoHeightWebView = React.memo(
       <View style={[props.style, { height: height || 50, transform: [{ translateX: -1 }] }]}>
         <WebView
           {...props}
-          style={{ transform: [{ translateX: 1 }] }}
+          style={{ transform: [{ translateX: 1 }], backgroundColor: '#0000' }}
           ref={webView}
           onMessage={handleMessage}
           injectedJavaScript={script}
