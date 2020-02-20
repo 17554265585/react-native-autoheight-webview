@@ -73,7 +73,7 @@ const AutoHeightWebView = React.memo(
           style={{ transform: [{ translateX: 1 }], backgroundColor: '#0000' }}
           ref={webView}
           onMessage={handleMessage}
-          injectedJavaScript={script}
+          injectedJavaScript={script + props.injectedJavaScript}
           source={currentSource}
           scrollEnabled={currentScrollEnabled}
         />
